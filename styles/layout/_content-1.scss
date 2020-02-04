@@ -1,0 +1,130 @@
+/* first content section with 3 big pics */
+.content-1-wrapper {
+  display: grid;
+
+  .h2-wrapper {
+    margin: 2rem 0;
+
+    &:hover {
+      transform: skewY(2deg) skewX(15deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: $color-h;
+      @media (min-width: $breakpoint-iphone5) {
+        font-size: $h2-big-font;
+      }
+
+      .h2-break::before {
+        content: " ";
+        display: block;
+      }
+    }
+  }
+
+  .article-middle {
+    display: grid;
+    margin: $margin-aside;
+
+    .first-text {
+      order: 1;
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+
+    .first-img-wrapper {
+      order: 2;
+    }
+
+    .second-text {
+      order: 3;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+
+    .second-img-wrapper {
+      order: 4;
+    }
+
+    .third-text {
+      order: 5;
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+
+    .third-img-wrapper {
+      order: 6;
+    }
+
+    .content-flex {
+      padding: 0 0.4rem;
+      &__h3 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $color-h;
+      }
+
+      &__p {
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .content-1-wrapper {
+    margin: $margin-aside-big;
+    .h2-wrapper {
+      h2 {
+        .h2-break::before {
+          content: "";
+          display: inline;
+        }
+      }
+    }
+
+    .article-middle {
+      display: grid;
+      grid-template:
+        "img1 text1"
+        "text2 img2"
+        "img3 text3"/1fr 1fr;
+      grid-gap: 3rem;
+
+      .first-text {
+        grid-area: text1;
+      }
+
+      .first-img-wrapper {
+        grid-area: img1;
+      }
+
+      .second-text {
+        grid-area: text2;
+      }
+
+      .second-img-wrapper {
+        grid-area: img2;
+      }
+
+      .third-text {
+        grid-area: text3;
+      }
+
+      .third-img-wrapper {
+        grid-area: img3;
+      }
+
+      .content-flex {
+        padding: 0 2rem;
+        align-self: center;
+      }
+    }
+  }
+}

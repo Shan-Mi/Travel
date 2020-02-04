@@ -1,0 +1,51 @@
+/* nav */
+.nav-top {
+  display: grid;
+  background-color: $color-main-dark;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+  transition: all ease-out;
+
+  &__logo {
+    align-self: end;
+    padding: $logo-padding;
+    font-family: "Unica One", sans-serif;
+    font-size: 2.6rem;
+    color: $color-main-orange;
+  }
+
+  &__menu-container {
+    @include menu--container;
+    margin: 0;
+    align-items: center;
+
+    a {
+      color: $color-main-orange;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: $color-main-white;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .nav-top {
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    grid-template:
+      "logo . menu" 70px/
+      200px 1.5fr minmax(413px, 1fr);
+
+    &__logo {
+      align-self: center;
+      grid-area: logo;
+    }
+
+    &__menu-container {
+      grid-area: menu;
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+  }
+}

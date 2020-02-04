@@ -1,0 +1,37 @@
+//margin for different sizes
+$margin-aside: 2rem;
+$margin-aside-big: 5rem;
+
+$h2-big-font: 3rem;
+
+//nav & footer
+$logo-padding: 0 2em;
+$menu-wrapper: 0 5rem;
+$menu-margin: 1.5rem 0 1rem;
+
+//background-color
+$color-main-dark: #394951;
+$color-main-orange: #ff8673;
+$color-main-white: #fff;
+$color-h: #9d5c5f;
+$color-light: #9aa5aa;
+$color-light-orange: #ffaf89;
+
+$image-size: calc((100vw - 2rem * 2 - 1.5rem) /2);
+$section4-img-width: calc((100vw - 2rem * 3) / 2);
+$section4-img-height: calc(((100vw - 2rem * 3) / 2) / 167 * 120);
+
+//breakpoints
+$breakpoint-iphone5: 352px;
+$breakpoint-cellphone: 400px;
+$breakpoint-tablet: 700px;
+$breakpoint-text-2: 784px;
+$breakpoint-text-1: 920px;
+
+//big screen
+$font-size-h: calc(3px + 2vw);
+$font-size-p: calc(3px + 1vw);
+
+//small screen
+$font-size-h-s: calc(3px + 2.6vw);
+$font-size-p-s: calc(2px + 1.8vw);

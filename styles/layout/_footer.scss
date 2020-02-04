@@ -1,0 +1,25 @@
+.footer {
+  background-color: $color-main-dark;
+  display: grid;
+  align-items: center;
+  padding-bottom: $margin-aside;
+
+  &__logo {
+    padding: 6rem 0 $margin-aside;
+    align-self: end;
+    font-family: "Unica One", sans-serif;
+    font-size: 2.8rem;
+    color: $color-main-orange;
+  }
+
+  &__menu-container {
+    @include menu--container;
+
+    &-item {
+      color: $color-main-orange;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: $color-main-white;
+    }
+  }
+}

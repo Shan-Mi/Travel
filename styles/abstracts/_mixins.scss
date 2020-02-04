@@ -1,0 +1,22 @@
+@mixin text--middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@mixin flex--center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin menu--container {
+  display: inline-flex;
+  /* padding: 0 12rem 2rem; */
+  margin: 1.5rem 0 1rem;
+  padding: $menu-wrapper;
+  /* margin: $menu-margin; */
+  justify-content: space-around;
+}
