@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* portfolio */
 .portfolio {
   display: flex;
@@ -67,3 +68,74 @@
     }
   }
 }
+=======
+/* portfolio */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-main-dark;
+  padding-bottom: 4rem;
+
+  &__h3 {
+    color: $color-main-orange;
+    font-size: 2.5rem;
+    margin: 3.4rem 0;
+    h3:hover {
+      transform: skewY(2deg) skewX(12deg) scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__pics-flex-container {
+    @include flex--center;
+
+    .smallpicc {
+      padding: 0.6rem;
+
+      @media screen and (min-width: 407px) {
+        padding: 1.5rem;
+      }
+    }
+
+    .smallpics {
+      width: 100%;
+      height: 100%;
+      max-width: 100px;
+      max-height: 100%;
+      display: inline-block;
+      border: 4px solid #fff;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .portfolio {
+    padding: 4rem $margin-aside-big;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-main-dark;
+    box-sizing: border-box;
+
+    &__h3 {
+      color: $color-main-orange;
+      font-size: 3.6rem;
+      margin: 3.4rem 0;
+    }
+
+    &__pics-flex-container {
+      @include flex--center;
+
+      .smallpicc {
+        padding: 0.6rem;
+      }
+
+      .smallpics {
+        max-width: 160px;
+        max-height: 100%;
+        display: inline-block;
+        border: 4px solid #fff;
+      }
+    }
+  }
+}
+>>>>>>> edited readme

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* header */
 .header {
   position: relative;
@@ -54,3 +55,61 @@
     }
   }
 }
+=======
+/* header */
+.header {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+
+  background-image: radial-gradient(circle at 50% 0, #39495188, #0c202aaf 93%),
+    url(../images/header/header-small.jpg);
+
+  @media screen and (min-width: 700px) {
+    background-image: radial-gradient(circle at 50% 0, #39495188, #0c202aaf 93%),
+      url(../images/header/header-large.jpg);
+  }
+
+  &__text-center {
+    @include text--middle;
+
+    &--big {
+      font-size: 2.3rem;
+      color: $color-main-orange;
+      letter-spacing: 1px;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+
+      @media (min-width: $breakpoint-iphone5) {
+        font-size: 2.7rem;
+      }
+    }
+
+    &--small {
+      font-size: 1.3rem;
+      letter-spacing: 0.06rem;
+      line-height: 2rem;
+      color: $color-main-white;
+      animation-name: moveInRight;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      @media (min-width: $breakpoint-iphone5) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .header {
+    height: 85vh;
+    &__text-center {
+      top: 37%;
+      left: 25%;
+      width: 40vw;
+    }
+  }
+}
+>>>>>>> edited readme

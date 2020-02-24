@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
 
 @import "abstracts/mixins";
@@ -18,4 +19,26 @@
 //transition: all / padding/ ease-in 500ms;
 //transition writen in parent container, and works for its child
 //transition-property:
+=======
+@import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "base/animation";
+@import "base/base";
+@import "layout/nav-top";
+@import "layout/header";
+@import "layout/content-1";
+@import "layout/content-2-portfolio";
+@import "layout/content-3";
+@import "layout/content-4-last";
+@import "layout/footer";
+
+//===mobil first===
+//min-width 480px
+//html {font-size: 62.5%} use 1rem = 10px as unit.
+//transition: all / padding/ ease-in 500ms;
+//transition writen in parent container, and works for its child
+//transition-property:
+>>>>>>> edited readme
 //transition-name:
